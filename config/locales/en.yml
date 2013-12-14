@@ -1,0 +1,56 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hi"
+  post : "Post"
+  mypost: "My Post"
+  practice: "Practice"
+  sign_out: "Sign out"
+  sign_up:  "Sign up"
+  sign_in:  "Sign in"
+  signed_in_as: "Signed in as"
+  not_you: "Not you ?"
+  footer: "Company 2013"
+  flash_thanks_commenting:  "Thanks for commenting!"
+  flash_post_create_success:  'Post was successfully created.'
+  flash_post_update_success:  'Post was successfully updated.'
+  flash_post_delete_success:  "Post was successfully deleted."
+  flas_post_delete_error: "You don't have permission in this Post"
+  mail_subject: "did comment in your post"
+  comment:
+    zero: "No comment is available"
+    one: " %{value} Comment:"
+    other: " %{value} Comments:"
+  time:
+    am: ''
+    formats:
+      default: ! '%A, %d de %B de %Y, %H:%M h'
+      long: ! '%A, %d de %B de %Y, %H:%M h'
+      short: ! '%d/%m/%Y, %H:%M %p'
+  post_mailer:
+      comment_email:
+        commenter: 'did comment in your post with content'
+        link_to_post: 'link to this post'
+        thanks: 'Thanks'
+  posts:
+    index:
+      title: "Title"
+      totalcomment: "Total Comments"
+      user: "User"
+      created_at: "Created at"
+      dont_have_post: "No post is available."
+    show:
+      add_comment:  "Add Comment"
+      create_comment: "Add"
+      title: "Title"
+      text: "Text"
+      user: "User"
+
+    new:
+      title: "New Post"
+    form:
+      title:  "Title"
+      text: "Text"
+      new:  "Create Post"
+      update: "Update Post"

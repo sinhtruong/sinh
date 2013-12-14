@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1><%=t :hello%>, <%= @poster %></h1>
+    <p><%= @commenter %> <%=t '.commenter' %> </p>
+    <p>
+      <%= @content %>
+    </p>
+    <p>
+      <%=t '.link_to_post'%>: <%= @url %>.
+    </p>
+    <p><%=t '.thanks'%> !</p>
+  </body>
+</html>

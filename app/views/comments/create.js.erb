@@ -1,0 +1,5 @@
+$("#comments_count").html("<%= t('comment', value: number_with_delimiter(@post.comments.count), count:  @post.comments.count)%>");
+$("#notice").html('<div class="flash notice"><%= escape_javascript(bootstrap_flash) %></div>');
+$("<%= escape_javascript(render @comment) %>").prependTo("#comments");
+$("#comment_body").val("");
+$('#activity_pane').hideLoading();

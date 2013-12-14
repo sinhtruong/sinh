@@ -1,0 +1,18 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+vi:
+  helpers:
+    actions: "Hanh Vi"
+    links:
+      back: "Tro ve"
+      cancel: "Huy"
+      confirm: "Ban Co Chac Chan?"
+      destroy: "Xoa"
+      new: "Tao Moi"
+      edit: "Sua"
+    titles:
+      edit: "Sua %{model}"
+      save: "Luu %{model}"
+      new: "Tao Moi %{model}"
+      delete: "Xoa %{model}"

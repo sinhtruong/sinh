@@ -1,0 +1,50 @@
+<div id="activity_pane">
+  </div>
+<%- model_class = Post -%>
+<div class="page-header">
+  <h1><%=t 'post' %></h1>
+</div>
+<div><strong><%=t ('.title') %>: </strong><%= @post.title %></div>
+<div><strong><%=t ('.text') %>: </strong><%= simple_format(@post.text) %></div>
+<div><strong><%=t ('.user') %>: </strong><%= @post.user.email %></div>
+<br/>
+<br/>
+<div>
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              posts_path, :class => 'btn'  %>
+  <%if user_signed_in? && @post.user == current_user %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_post_path(@post), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              post_path(@post),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+  <%end%>
+</div>
+<hr/>
+<%if user_signed_in? %>
+<h3><%=t '.add_comment'%></h3>
+<%= form_for([@post,@post.comments.build], remote:true) do |f| %>
+ <div class='controls'>
+
+   <%= f.text_area :body , class:'input-xxlarge',rows:'3'%>
+ </div>
+ <p>
+  <%= f.submit (t '.create_comment'),id:"commit" , class:'btn btn-primary' %>
+ </p>
+<% end %>
+<div id="comments-notice"></div>
+<%end%>
+<strong id="comments_count">
+  <%= t('comment', value: number_with_delimiter(@comments.total_entries), count:  @comments.total_entries)%>
+</strong>
+</br>
+</br>
+<div id="comments">
+  <%= render :partial => @comments, :locals => { :list => true } %>
+</div>
+<div class='pull-right'>
+    <%=  will_paginate @comments %>
+  </div>
+

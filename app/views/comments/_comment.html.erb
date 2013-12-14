@@ -1,0 +1,8 @@
+<%= div_for comment do %>
+  <p>
+    <b><%= comment.user.email %></b>
+    wrote:
+  </p>
+  <%= content_tag(:p, simple_format(comment.body), :class => "comment-body") %>
+  <hr/>
+<% end %>

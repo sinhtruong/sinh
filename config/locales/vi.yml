@@ -1,0 +1,57 @@
+vi:
+  hello: "Xin Chao"
+  post : "Bài viết"
+  mypost: "Bai Viet cua toi"
+  practice: "Thuc Hanh"
+  sign_out: "Dang Xuat"
+  sign_up:  "Dang ky"
+  sign_in:  "Dang Nhap"
+  signed_in_as: "Dang nhap boi"
+  not_you: "Khong Phai Ban ?"
+  footer: "NUS 2013"
+  flash_thanks_commenting:  "Cam On Binh luan cua ban!"
+  flash_post_create_success:  'Bài viết đã được tạo thành công'
+  flash_post_update_success:  'Bài viết đã được cập nhật thành công.'
+  flash_post_delete_success:  "Xoa bai viet thanh cong."
+  flas_post_delete_error: "Ban khong co quyen tren bai viet nay"
+  mail_subject: "da binh luan trong bai viet cua ban"
+  comment:
+    zero: "XXX"
+    one: " %{value} Binh Luan:"
+    other: " %{value} Binh Luans:"
+  time:
+
+    am: ''
+    formats:
+      default: ! '%A, %d de %B de %Y, %H:%M h'
+      long: ! '%A, %d de %B de %Y, %H:%M h'
+      short: ! '%d/%m, %H:%M h'
+  post_mailer:
+    comment_email:
+      commenter: 'đã bình luận trong bài viết của bạn với nội dung'
+      link_to_post: 'liên kết đến bài viết này'
+      thanks: 'Cam on'
+  posts:
+    index:
+      title: "Tieu De"
+      totalcomment: "Tong So Binh Luan"
+      user: "Nguoi Dang"
+      created_at: "Ngay Tao"
+      dont_have_post: "Chua co bai viet nao het."
+    show:
+      add_comment:  "Them Binh Luan"
+      create_comment: "Them"
+      title: "Tieu De"
+      text: "Noi Dung"
+      user: "Nguoi Dang"
+    new:
+      title: "Tao moi bai viet"
+    form:
+      title:  "Tieu De"
+      text: "Noi Dung"
+      new:  "Tao Moi"
+      update: "Cap Nhat"
+  will_paginate:
+    previous_label: "&#8592; Trang Truoc"
+    next_label: "Trang Sau &#8594;"
+    page_gap: "&hellip;"
